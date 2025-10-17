@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quiz By Yousuf</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="topbar">
+      <h2 class="brand">Quiz App</h2>
+      <div class="meta">
+        <div id="qcount">Question 1 / 10</div>
+        <div id="progressWrap">
+          <div id="progressBar"></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="quiz-area">
+      <article class="question-panel">
+        <h3 id="ques">Loading question...</h3>
+        <div class="choices" id="choices">
+        </div>
+
+        <div class="controls">
+          <button id="nextBtn" class="primary" disabled>Next</button>
+        </div>
+      </article>
+
+      <aside class="side-panel">
+        <div class="timer-card">
+          <div class="timer-circle">
+            <svg viewBox="0 0 36 36">
+              <path
+                id="timerPath"
+                stroke-linecap="round"
+                d="M18 2.0845
+                   a 15.9155 15.9155 0 0 1 0 31.831
+                   a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+            <div id="timerText">01:30</div>
+          </div>
+
+          <div class="score-card">
+            <div>Score</div>
+            <div id="scoreNow">0</div>
+          </div>
+        </div>
+
+        <div class="attribution">Created by Yousuf</div>
+      </aside>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
