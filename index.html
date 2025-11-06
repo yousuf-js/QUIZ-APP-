@@ -7,6 +7,8 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,9 +26,7 @@
     <section class="quiz-area">
       <article class="question-panel">
         <h3 id="ques">Loading question...</h3>
-        <div class="choices" id="choices">
-        </div>
-
+        <div class="choices" id="choices"></div>
         <div class="controls">
           <button id="nextBtn" class="primary" disabled>Next</button>
         </div>
@@ -44,7 +44,7 @@
                    a 15.9155 15.9155 0 0 1 0 -31.831"
               />
             </svg>
-            <div id="timerText">01:30</div>
+            <div id="timerText">02:00</div>
           </div>
 
           <div class="score-card">
